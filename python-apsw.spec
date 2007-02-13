@@ -2,7 +2,7 @@
 %define		module	apsw
 
 Summary:	Another Python SQLite Wrapper
-Summary(pl.UTF-8):   Another Python SQLite Wrapper - jeszcze jeden pythonowy wrapper dla SQLite
+Summary(pl.UTF-8):	Another Python SQLite Wrapper - jeszcze jeden pythonowy wrapper dla SQLite
 Name:		python-%{module}
 Version:	3.2.2
 Release:	1
