@@ -13,6 +13,8 @@ Source0:	http://dl.sourceforge.net/bitpim/%{module}-%{version}-r1.zip
 URL:		http://www.rogerbinns.com/apsw.html
 %pyrequires_eq	python-modules
 BuildRequires:	python-devel >= 1:2.3
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 BuildRequires:	sqlite3-devel
 BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
