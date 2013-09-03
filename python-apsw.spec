@@ -1,5 +1,6 @@
 
 %define		module	apsw
+%define		sqlite_ver 3.8.0.1
 
 Summary:	Another Python SQLite Wrapper
 Summary(pl.UTF-8):	Another Python SQLite Wrapper - jeszcze jeden pythonowy wrapper dla SQLite
@@ -15,8 +16,9 @@ URL:		http://code.google.com/p/apsw/
 BuildRequires:	python-devel >= 1:2.3
 BuildRequires:	python-modules
 BuildRequires:	rpm-pythonprov
-BuildRequires:	sqlite3-devel >= 3.8.0
+BuildRequires:	sqlite3-devel >= %{sqlite_ver}
 BuildRequires:	unzip
+Requires:	sqlite3 >= %{sqlite_ver}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -52,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/*.html
+%doc doc
 %attr(755,root,root) %{py_sitedir}/%{module}.so
 %{py_sitedir}/%{module}-*.egg-info
