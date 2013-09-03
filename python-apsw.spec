@@ -4,18 +4,18 @@
 Summary:	Another Python SQLite Wrapper
 Summary(pl.UTF-8):	Another Python SQLite Wrapper - jeszcze jeden pythonowy wrapper dla SQLite
 Name:		python-%{module}
-Version:	3.2.2
-Release:	3
+Version:	3.8.0.1
+Release:	1
 License:	Free
 Group:		Development/Languages/Python
-Source0:	http://dl.sourceforge.net/bitpim/%{module}-%{version}-r1.zip
-# Source0-md5:	f18221ecb428036a33efb2ac0294f85e
-URL:		http://www.rogerbinns.com/apsw.html
+Source0:	http://apsw.googlecode.com/files/%{module}-%{version}-r1.zip
+# Source0-md5:	2ea61c66ce40cbe3d10ea16c633867de
+URL:		http://code.google.com/p/apsw/
 %pyrequires_eq	python-modules
 BuildRequires:	python-devel >= 1:2.3
 BuildRequires:	python-modules
 BuildRequires:	rpm-pythonprov
-BuildRequires:	sqlite3-devel
+BuildRequires:	sqlite3-devel >= 3.8.0
 BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -52,5 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.html
+%doc doc/*.html
 %attr(755,root,root) %{py_sitedir}/%{module}.so
+%{py_sitedir}/%{module}-*.egg-info
