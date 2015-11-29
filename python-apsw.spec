@@ -17,6 +17,7 @@ Group:		Libraries/Python
 Source0:	https://github.com/rogerbinns/apsw/archive/%{version}-r1.tar.gz
 # Source0-md5:	09eb9f39d7cf9d320ee8e89f9e9ab7ea
 URL:		http://rogerbinns.github.io/apsw/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	rpm-pythonprov
 BuildRequires:	sqlite3-devel >= %{sqlite_ver}
 BuildRequires:	unzip
