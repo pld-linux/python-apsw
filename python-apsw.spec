@@ -11,7 +11,7 @@ Summary:	Another Python SQLite Wrapper
 Summary(pl.UTF-8):	Another Python SQLite Wrapper - jeszcze jeden pythonowy wrapper dla SQLite
 Name:		python-%{module}
 Version:	3.8.5
-Release:	8
+Release:	9
 License:	Free
 Group:		Libraries/Python
 Source0:	https://github.com/rogerbinns/apsw/archive/%{version}-r1.tar.gz
