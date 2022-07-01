@@ -2,7 +2,7 @@
 # Conditional build:
 %bcond_with	tests	# do not perform "make test"
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module
 
 %define		module	apsw
 %define		sqlite_ver 3.8.5
@@ -11,7 +11,7 @@ Summary:	Another Python SQLite Wrapper
 Summary(pl.UTF-8):	Another Python SQLite Wrapper - jeszcze jeden pythonowy wrapper dla SQLite
 Name:		python-%{module}
 Version:	3.8.5
-Release:	17
+Release:	18
 License:	Free
 Group:		Libraries/Python
 Source0:	https://github.com/rogerbinns/apsw/archive/%{version}-r1.tar.gz
